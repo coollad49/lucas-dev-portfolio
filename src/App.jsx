@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 
 const App = ()=>{
   return(
-    <div className="p-4">
+    <div className="p-4 overflow-auto">
       <NavBar/>
       <Header/>
     </div>
