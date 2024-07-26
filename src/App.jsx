@@ -4,7 +4,7 @@ import Skills from "./components/Skills";
 
 const App = ()=>{
   return(
-    <div className="p-4 overflow-auto">
+    <div className="p-4 overflow-auto lg:mx-20">
       <NavBar/>
       <Header/>
       <Skills/>
