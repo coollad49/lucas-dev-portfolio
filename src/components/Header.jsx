@@ -10,13 +10,13 @@ const Header = () => {
             <p className="text-sm text-center text-gray-300 md:text-left">I am a Software Engineering Intern with hands-on experience in full-stack development, specializing in Django and Tailwind CSS. Proven ability to deliver solutions in agile & CI/CD environments.</p>
             <div className="w-full bg-white text-black flex justify-around mt-7 p-4 rounded-xl">
                 <div className="flex flex-col items-center">
-                    <span className="font-bold text-3xl">10</span>
+                    <span className="font-bold text-3xl">11</span>
                     <span className="uppercase text-[10px]">verified</span>
                     <span className="uppercase text-[10px]">skills</span>
                 </div>
                 <div className="border-l-2"></div>
                 <div className="flex flex-col items-center">
-                    <span className="font-bold text-3xl">5</span>
+                    <span className="font-bold text-3xl">3</span>
                     <span className="uppercase text-[10px] ">Professional</span>
                     <span className="uppercase text-[10px]">Projects</span>
                 </div>
