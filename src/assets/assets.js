@@ -5,6 +5,7 @@ import me from './me.jpeg'
 import djangoproject from './djangoproject.svg'
 import cloudserver from './cloudserver.png'
 import box from './box.png'
+import task from './task.png'
 
 export const assets = {
     code,
@@ -58,7 +59,7 @@ export const projects = [
             `,
         skills: ['Python', 'HTML', 'Tailwind', 'Jquery', 'REST API', 'Javascript', 'CSS'],
         date: 'Jun - Jul 2024',
-        img: cloudserver,
+        img: task,
         two_buttons: true,
         link: 'https://github.com/coollad49/task-management-dashboard-application',
     },
