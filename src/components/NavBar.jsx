@@ -2,9 +2,11 @@ import Logo from "./Logo";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useContext } from "react";
+import { PopupContext } from "../context/PopupContext";
 
 const NavBar = () =>{
-    
+    const {setShowNav} = useContext(PopupContext)
     return(
         <div className="flex justify-between">
             <Logo/>
@@ -39,7 +41,9 @@ i
                     <FontAwesomeIcon icon={faGithub} fontSize={32}/>
                 </a>
             </div>
-            <div className="text-white flex items-center md:hidden">
+            <div onClick={()=>{
+                setShowNav(true)
+            }} className="text-white flex items-center md:hidden">
                 <FontAwesomeIcon icon={faBars} fontSize={32}/>
             </div>
         </div>
