@@ -3,12 +3,12 @@ import { faGitAlt, faPython, faJs, faReact, faHtml5, faCss3Alt, faLinux, faDocke
 
 const Skills = () => {
   return (
-    <div id='skills' className="bg-gray-900 text-white p-5 rounded-md md:mt-5">
-        <div className="flex items-center justify-center mb-6 md:mb-12 md:mt-8 lg:justify-start lg:mx-12 lg:space-x-5">
+    <div id='skills' className="bg-gray-900 text-white py-5 rounded-md md:mt-5">
+        <div className="flex items-center justify-center mb-6 md:mb-12 md:mt-8 lg:justify-start lg:mx-20 lg:space-x-5">
            <h1 className="font-[Manrope] font-extrabold text-2xl lg:text-4xl">Skills Acquired</h1> 
-           <hr className='hidden lg:block border w-[70%]' />
+           <hr className='hidden lg:block border w-[75%]' />
         </div>
-        <div className="grid grid-cols-4 gap-6 pb-5 md:grid-cols-6">
+        <div className="lg:mx-16 grid grid-cols-4 gap-6 pb-5 md:grid-cols-6 mx-2">
             <div className='flex flex-col items-center space-y-2 group'>
                 <div className='bg-[#2E236C] p-3 rounded-lg flex items-center'>
                     <FontAwesomeIcon icon={faGitAlt} className='text-4xl group-hover:scale-110 transition'/>

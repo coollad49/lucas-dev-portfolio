@@ -15,7 +15,7 @@ const NavBar = () =>{
                     <a href="#projects" className="font-bold text-gray-200 text-xl">My Projects</a>
                 </div>
                 <div>
-                    <a href="" className="font-bold text-gray-200 text-xl">Github</a>
+                    <a href="#github" className="font-bold text-gray-200 text-xl">Github</a>
                 </div>
                 <div className="border-l-2 text-black">
 i
