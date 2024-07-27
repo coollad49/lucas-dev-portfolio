@@ -4,19 +4,34 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const NavBar = () =>{
+    
     return(
         <div className="flex justify-between">
             <Logo/>
             <div className="hidden  md:flex gap-4 text-white items-center font-[Manrope]">
-                <div>
-                    <a href="#skills" className="font-bold text-gray-200 text-xl">Skills Acquired</a>
-                </div>
-                <div>
-                    <a href="#projects" className="font-bold text-gray-200 text-xl">My Projects</a>
-                </div>
-                <div>
-                    <a href="#github" className="font-bold text-gray-200 text-xl">Github</a>
-                </div>
+                <button onClick={()=>{
+                    const skills = document.getElementById('skills')
+                    skills.scrollIntoView({
+                        behavior : 'smooth'
+                    })
+                }} className="font-bold text-gray-200 text-xl">Skills Acquired</button>
+            
+    
+                <button onClick={()=>{
+                    const skills = document.getElementById('projects')
+                    skills.scrollIntoView({
+                        behavior : 'smooth'
+                    })
+                }} className="font-bold text-gray-200 text-xl">My Projects</button>
+        
+    
+                <button onClick={()=>{
+                    const skills = document.getElementById('github')
+                    skills.scrollIntoView({
+                        behavior : 'smooth'
+                    })
+                }} className="font-bold text-gray-200 text-xl">Github</button>
+            
                 <div className="border-l-2 text-black">
 i
                 </div>
