@@ -6,7 +6,7 @@ const Sidebar = () => {
   
   if (showNav){
     return(
-        <div className="fixed bg-slate-800 h-full w-full top-0 p-7">
+        <div className={`fixed bg-slate-800 h-full w-full top-0 p-7 ${showNav ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
         <span onClick={()=>{
           setShowNav(false)
         }} className="text-purple-500 font-bold text-xl font-mono">x</span>
