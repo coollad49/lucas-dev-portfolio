@@ -22,7 +22,7 @@ const Project = ({img, title, description, task, skills, link, date, two_buttons
                 ))}
             </div>
             <div className='flex flex-col md:flex-row gap-1 md:space-x-4 mt-3'>
-                {two_buttons ? <a href={demo_link} className="flex justify-center my-3 cursor-pointer"><span className="dark:bg-white bg-gray-900 dark:border-2 font-bold rounded-full py-3 px-4 text-white dark:text-blue-900">View Demo</span></a> : ''}
+                {two_buttons ? <a href={demo_link} target='_blank' className="flex justify-center my-3 cursor-pointer"><span className="dark:bg-white bg-gray-900 dark:border-2 font-bold rounded-full py-3 px-4 text-white dark:text-blue-900">View Demo</span></a> : ''}
                 <a href={link} className="flex justify-center my-3 cursor-pointer"><span className="dark:bg-gray-800 bg-gray-900 font-bold rounded-full py-3 px-4">View Project Details</span></a>
             </div>
             

@@ -47,6 +47,7 @@ export const projects = [
         img: box,
         two_buttons: true,
         link: 'https://github.com/coollad49/PEAMS/',
+        demo_link: '#',
     },
     {
         title : "Task Management",
@@ -62,6 +63,7 @@ export const projects = [
         img: task,
         two_buttons: true,
         link: 'https://github.com/coollad49/task-management-dashboard-application',
+        demo_link: 'https://task-management-dashboard-application.onrender.com/',
     },
     
 ]

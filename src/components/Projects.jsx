@@ -11,7 +11,7 @@ const Projects = () => {
         </div>
         <div className="dark:bg-[#0c0c0c] text-white space-y-10">
             {projects.map((project, index)=>(
-                <Project key={index} img={project.img} title={project.title} description={project.description} task={project.task} skills={project.skills} date={project.date} two_buttons={project.two_buttons} link={project.link} />
+                <Project key={index} img={project.img} title={project.title} description={project.description} task={project.task} skills={project.skills} date={project.date} two_buttons={project.two_buttons} link={project.link} demo_link={project.demo_link}/>
             ))}
         </div>
         
