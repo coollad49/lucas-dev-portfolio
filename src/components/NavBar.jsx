@@ -1,11 +1,12 @@
 import Logo from "./Logo";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useContext } from "react";
 import { PopupContext } from "../context/PopupContext";
+import PropTypes from 'prop-types';
 
-const NavBar = () =>{
+const NavBar = ({theme, setTheme}) =>{
     const {setShowNav} = useContext(PopupContext)
     return(
         <div className="flex justify-between">
@@ -16,7 +17,7 @@ const NavBar = () =>{
                     skills.scrollIntoView({
                         behavior : 'smooth'
                     })
-                }} className="font-bold text-gray-200 text-xl">Skills Acquired</button>
+                }} className="font-bold dark:text-gray-200 text-gray-900 text-xl">Skills Acquired</button>
             
     
                 <button onClick={()=>{
@@ -24,7 +25,7 @@ const NavBar = () =>{
                     skills.scrollIntoView({
                         behavior : 'smooth'
                     })
-                }} className="font-bold text-gray-200 text-xl">My Projects</button>
+                }} className="font-bold dark:text-gray-200 text-gray-900 text-xl">My Projects</button>
         
     
                 <button onClick={()=>{
@@ -32,22 +33,29 @@ const NavBar = () =>{
                     skills.scrollIntoView({
                         behavior : 'smooth'
                     })
-                }} className="font-bold text-gray-200 text-xl">Github</button>
+                }} className="font-bold dark:text-gray-200 text-gray-900 text-xl">Github</button>
             
-                <div className="border-l-2 text-black">
+                <div className="border-l-2 dark:text-black text-white">
 i
                 </div>
-                <a href="https://github.com/coollad49">
+                <a href="https://github.com/coollad49" className="text-black dark:text-white">
                     <FontAwesomeIcon icon={faGithub} fontSize={32}/>
                 </a>
+                <div onClick={()=>setTheme(!theme)} className="text-gray-700 dark:text-white cursor-pointer">
+                    {theme? <FontAwesomeIcon icon={faSun} fontSize={26}/> : <FontAwesomeIcon icon={faMoon} fontSize={26}/>}
+                </div>
             </div>
             <div onClick={()=>{
                 setShowNav(true)
-            }} className="text-white flex items-center md:hidden">
+            }} className="dark:text-white flex items-center md:hidden">
                 <FontAwesomeIcon icon={faBars} fontSize={32}/>
             </div>
         </div>
     )
 }
 
+NavBar.propTypes = {
+    theme: PropTypes.bool.isRequired,
+    setTheme: PropTypes.func.isRequired,
+};
 export default NavBar;
