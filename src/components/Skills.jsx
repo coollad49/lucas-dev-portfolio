@@ -29,12 +29,6 @@ const Skills = () => {
             </div>
             <div className='flex flex-col items-center space-y-2 group'>
                 <div className='bg-[#2E236C] p-3 rounded-lg flex items-center'>
-                    <FontAwesomeIcon icon={faGitAlt} className='text-4xl group-hover:scale-110 transition'/>
-                </div>
-                <span className='font-bold'>Git</span>
-            </div>
-            <div className='flex flex-col items-center space-y-2 group'>
-                <div className='bg-[#2E236C] p-3 rounded-lg flex items-center'>
                     <FontAwesomeIcon icon={faReact} className='text-4xl group-hover:scale-110 transition'/>
                 </div>
                 <span className='font-bold text-sm'>React</span>
