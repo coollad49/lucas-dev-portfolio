@@ -7,29 +7,29 @@ import Sidebar from "./components/Sidebar";
 import Skills from "./components/Skills";
 
 const App = ()=>{
-  const [darkTheme, setDarkTheme] = useState(false);
+  const [lightTheme, setLightTheme] = useState(false);
 
   useEffect(()=>{
     let savedTheme = localStorage.getItem('savedTheme')
     if (!savedTheme){
-      savedTheme = "light";
-      setDarkTheme(false);
+      savedTheme = "dark";
+      setLightTheme(false);
       localStorage.setItem("savedTheme", savedTheme)
     }
-    setDarkTheme(savedTheme === "dark" ? true : false);
+    setLightTheme(savedTheme === "light" ? true : false);
   }, [])
   return(
-    <div className={`${darkTheme? 'dark': ''}`}>
+    <div className={`${lightTheme? 'dark': ''}`}>
         <div className="relative dark:bg-[#0c0c0c]">
         <Sidebar/>
         <div className="p-4 overflow-auto lg:mx-20">
-          <NavBar theme={darkTheme} setTheme={setDarkTheme}/>
+          <NavBar theme={lightTheme} setTheme={setLightTheme}/>
           <Header/>
         </div>
         <Skills/>
         <div className="p-4 overflow-auto lg:mx-20">
           <Projects/>
-          <Contribution dark={darkTheme}/>
+          <Contribution dark={lightTheme}/>
         </div>
       </div>
     </div>
