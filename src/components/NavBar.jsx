@@ -45,11 +45,17 @@ i
                     {theme? <FontAwesomeIcon icon={faSun} fontSize={26}/> : <FontAwesomeIcon icon={faMoon} fontSize={26}/>}
                 </div>
             </div>
-            <div onClick={()=>{
-                setShowNav(true)
-            }} className="dark:text-white flex items-center md:hidden">
-                <FontAwesomeIcon icon={faBars} fontSize={32}/>
+            <div className="flex items-center md:hidden gap-8">
+                <div onClick={()=>setTheme(!theme)} className="text-gray-700 dark:text-white cursor-pointer">
+                    {theme? <FontAwesomeIcon icon={faSun} fontSize={26}/> : <FontAwesomeIcon icon={faMoon} fontSize={26}/>}
+                </div>
+                <div onClick={()=>{
+                    setShowNav(true)
+                }} className="dark:text-white">
+                    <FontAwesomeIcon icon={faBars} fontSize={32}/>
+                </div>
             </div>
+            
         </div>
     )
 }
