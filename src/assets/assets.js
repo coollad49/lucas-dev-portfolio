@@ -47,7 +47,7 @@ export const projects = [
         img: box,
         two_buttons: true,
         link: 'https://github.com/coollad49/PEAMS/',
-        demo_link: '#',
+        demo_link: 'https://peams.onrender.com',
     },
     {
         title : "Task Management",
