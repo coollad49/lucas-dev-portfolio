@@ -1,5 +1,5 @@
 import { Cloud, Box, ListTodo, Bot } from 'lucide-react'
-import me from './me.jpeg'
+import me from './me.jpg'
 import code from './code.png'
 
 export const assets = {

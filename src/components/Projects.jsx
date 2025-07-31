@@ -10,7 +10,7 @@ const Projects = () => {
            <hr className='hidden lg:block border w-[80%] border-black dark:border-white' />
         </div>
         <div className="dark:bg-[#18181b] text-white space-y-10">
-            {projects.map((project, index)=>(
+            {[...projects].reverse().map((project, index)=>(
                 <Project
                     key={index}
                     icon={project.icon}

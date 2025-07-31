@@ -12,7 +12,7 @@ const App = ()=>{
   useEffect(()=>{
     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
     if (prefersDarkScheme){
-      setDarkTheme(true);
+      setDarkTheme(false);
     }
   }, [])
   return(
