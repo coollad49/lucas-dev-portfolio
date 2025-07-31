@@ -3,7 +3,7 @@ import { assets } from "../assets/assets"
 const Header = () => {
   return (
     <div className="mt-2 md:mt-4 flex-col flex justify-center items-center space-y-8 md:flex-row-reverse md:justify-between md:item-start">
-        <img src={assets.me} alt="" className="rounded-full w-56 md:w-72"/>
+        <img src={assets.me} alt="" className="rounded-full w-56 md:w-72 shadow-xl ring-4 ring-indigo-200"/>
         <div className="dark:text-white flex flex-col items-center pb-6 max-w-md md:items-start">
             <h2 className="font-bold text-xl md:text-2xl mb-2">Hi, my name is</h2>
             <h1 className="font-bold text-3xl md:text-4xl mb-3">Lucas-Adebayo Daniel</h1>

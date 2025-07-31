@@ -20,6 +20,7 @@ export const projects = [
         skills: ['Python', 'REST', 'HTTP'],
         date: 'June 2024',
         icon: 'Cloud',
+        iconColorClass: 'text-indigo-600', // Indigo for HTTP Server
         two_buttons: false,
         link: 'https://github.com/coollad49/Http_server',
     },
@@ -35,6 +36,7 @@ export const projects = [
         skills: ['Python', 'Django', 'HTML', 'CSS', 'JavaScript'],
         date: 'May 2024',
         icon: 'Box',
+        iconColorClass: 'text-green-600', // Green for PEAMS
         two_buttons: true,
         link: 'https://github.com/coollad49/PEAMS/',
         demo_link: 'https://peams.onrender.com',
@@ -51,6 +53,7 @@ export const projects = [
         skills: ['Python', 'HTML', 'Tailwind', 'Jquery', 'REST API', 'Javascript', 'CSS'],
         date: 'Jun - Jul 2024',
         icon: 'ListTodo',
+        iconColorClass: 'text-orange-400', // Orange for Task Management
         two_buttons: true,
         link: 'https://github.com/coollad49/task-management-dashboard-application',
         demo_link: 'https://task-management-dashboard-application.onrender.com/',
@@ -68,6 +71,7 @@ export const projects = [
         skills: ['Next.js', 'JavaScript', 'Meta LLaMA', 'Tailwind CSS', 'shadcn-ui', 'AWS EC2'],
         date: '2024',
         icon: 'Bot',
+        iconColorClass: 'text-sky-500', // Sky blue for Chatbot
         two_buttons: true,
         link: 'https://github.com/coollad49/customer_support_chatbot',
         demo_link: 'http://35.183.131.3/',

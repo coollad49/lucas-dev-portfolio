@@ -12,28 +12,38 @@ const NavBar = ({theme, setTheme}) =>{
         <div className="flex justify-between">
             <Logo/>
             <div className="hidden  md:flex gap-4 text-white items-center font-[Manrope]">
-                <button onClick={()=>{
-                    const skills = document.getElementById('skills')
-                    skills.scrollIntoView({
-                        behavior : 'smooth'
-                    })
-                }} className="font-bold dark:text-gray-200 text-gray-900 text-xl">Skills Acquired</button>
+                <button
+                  onClick={() => {
+                    const skills = document.getElementById('skills');
+                    skills.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="font-bold dark:text-gray-200 text-gray-900 text-xl relative focus:outline-none focus:underline hover:underline hover:text-indigo-600 transition"
+                  aria-current="page"
+                >
+                  Skills Acquired
+                </button>
             
     
-                <button onClick={()=>{
-                    const skills = document.getElementById('projects')
-                    skills.scrollIntoView({
-                        behavior : 'smooth'
-                    })
-                }} className="font-bold dark:text-gray-200 text-gray-900 text-xl">My Projects</button>
+                <button
+                  onClick={() => {
+                    const skills = document.getElementById('projects');
+                    skills.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="font-bold dark:text-gray-200 text-gray-900 text-xl focus:outline-none hover:underline hover:text-indigo-600 transition"
+                >
+                  My Projects
+                </button>
         
     
-                <button onClick={()=>{
-                    const skills = document.getElementById('github')
-                    skills.scrollIntoView({
-                        behavior : 'smooth'
-                    })
-                }} className="font-bold dark:text-gray-200 text-gray-900 text-xl">Github</button>
+                <button
+                  onClick={() => {
+                    const skills = document.getElementById('github');
+                    skills.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="font-bold dark:text-gray-200 text-gray-900 text-xl focus:outline-none hover:underline hover:text-indigo-600 transition"
+                >
+                  Github
+                </button>
             
                 <div className="border-l-2 dark:text-black text-white">
 i

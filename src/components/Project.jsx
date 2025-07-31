@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import * as LucideIcons from 'lucide-react';
 
-const Project = ({icon, title, description, task, skills, link, date, two_buttons, demo_link}) => {
+const Project = ({icon, title, description, task, skills, link, date, two_buttons, demo_link, iconColorClass}) => {
   const IconComponent = LucideIcons[icon] || LucideIcons['Box'];
   return (
-    <div className="dark:bg-gray-900 bg-gray-100 dark:border-none border shadow-xl p-1 md:p-5 rounded-xl flex flex-col mb-5 md:flex-row-reverse md:justify-between">
+    <div className="bg-white dark:bg-[#232946] dark:border-none border shadow-xl p-1 md:p-5 rounded-xl flex flex-col mb-5 md:flex-row-reverse md:justify-between transition-transform hover:scale-[1.02] hover:shadow-2xl">
         <div className="flex justify-center my-5 md:items-center">
-            <IconComponent className="w-24 h-24 md:w-40 md:h-40 hover:scale-105 transition" />
+            <IconComponent className={`w-24 h-24 md:w-40 md:h-40 hover:scale-105 transition ${iconColorClass} dark:text-white`} />
         </div>
         <div className=''>
             <div className="flex flex-col items-center md:items-start md:p-2 dark:text-white text-gray-900">
@@ -24,8 +24,8 @@ const Project = ({icon, title, description, task, skills, link, date, two_button
                 ))}
             </div>
             <div className='flex flex-col md:flex-row gap-1 md:space-x-4 mt-3'>
-                {two_buttons ? <a href={demo_link} target='_blank' className="flex justify-center my-3 cursor-pointer"><span className="dark:bg-white bg-gray-900 dark:border-2 font-bold rounded-full py-3 px-4 text-white dark:text-blue-900">View Demo</span></a> : ''}
-                <a href={link} className="flex justify-center my-3 cursor-pointer"><span className="dark:bg-gray-800 bg-gray-900 font-bold rounded-full py-3 px-4">View Project Details</span></a>
+                {two_buttons ? <a href={demo_link} target='_blank' className="flex justify-center my-3 cursor-pointer"><span className="dark:bg-white bg-gray-900 dark:border-2 font-bold rounded-full py-3 px-4 text-white dark:text-blue-900 transition-transform transition-colors hover:bg-indigo-700 hover:scale-105">View Demo</span></a> : ''}
+                <a href={link} className="flex justify-center my-3 cursor-pointer"><span className="dark:bg-gray-800 bg-gray-900 font-bold rounded-full py-3 px-4 transition-transform transition-colors hover:bg-indigo-700 hover:text-white hover:scale-105">View Project Details</span></a>
             </div>
         </div>
     </div>

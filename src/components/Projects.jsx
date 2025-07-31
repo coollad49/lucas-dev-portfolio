@@ -9,7 +9,7 @@ const Projects = () => {
            <h1 className="font-[Manrope] font-extrabold text-2xl lg:text-4xl">My Projects</h1> 
            <hr className='hidden lg:block border w-[80%] border-black dark:border-white' />
         </div>
-        <div className="dark:bg-[#0c0c0c] text-white space-y-10">
+        <div className="dark:bg-[#18181b] text-white space-y-10">
             {projects.map((project, index)=>(
                 <Project
                     key={index}
@@ -22,6 +22,7 @@ const Projects = () => {
                     two_buttons={project.two_buttons}
                     link={project.link}
                     demo_link={project.demo_link}
+                    iconColorClass={project.iconColorClass}
                 />
             ))}
         </div>
