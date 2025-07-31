@@ -24,8 +24,8 @@ const Project = ({icon, title, description, task, skills, link, date, two_button
                 ))}
             </div>
             <div className='flex flex-col md:flex-row gap-1 md:space-x-4 mt-3'>
-                {two_buttons ? <a href={demo_link} target='_blank' className="flex justify-center my-3 cursor-pointer"><span className="dark:bg-white bg-gray-900 dark:border-2 font-bold rounded-full py-3 px-4 text-white dark:text-blue-900 transition-transform transition-colors hover:bg-indigo-700 hover:scale-105">View Demo</span></a> : ''}
-                <a href={link} className="flex justify-center my-3 cursor-pointer"><span className="dark:bg-gray-800 bg-gray-900 font-bold rounded-full py-3 px-4 transition-transform transition-colors hover:bg-indigo-700 hover:text-white hover:scale-105">View Project Details</span></a>
+                {two_buttons ? <a href={demo_link} target='_blank' className="flex justify-center my-3 cursor-pointer"><span className="dark:bg-white bg-gray-900 dark:border-2 font-bold rounded-full py-3 px-4 text-white dark:text-blue-900 transition-transform hover:bg-indigo-700 hover:scale-105">View Demo</span></a> : ''}
+                <a href={link} className="flex justify-center my-3 cursor-pointer"><span className="dark:bg-gray-800 bg-gray-900 font-bold rounded-full py-3 px-4  transition-colors hover:bg-indigo-700 hover:text-white hover:scale-105">View Project Details</span></a>
             </div>
         </div>
     </div>
