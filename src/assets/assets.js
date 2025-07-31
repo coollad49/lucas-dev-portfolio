@@ -69,11 +69,58 @@ export const projects = [
             - Provides intelligent, context-aware responses to user queries
             `,
         skills: ['Next.js', 'JavaScript', 'Meta LLaMA', 'Tailwind CSS', 'shadcn-ui', 'AWS EC2'],
-        date: '2024',
+        date: 'July 2024',
         icon: 'Bot',
         iconColorClass: 'text-sky-500', // Sky blue for Chatbot
         two_buttons: true,
         link: 'https://github.com/coollad49/customer_support_chatbot',
         demo_link: 'http://35.183.131.3/',
     },
+    {
+        title: "Flashcard SaaS App",
+        description: "A flashcard-based learning web application. It allows users to create, manage, and review flashcards.",
+        task: `
+            - Developed a full-stack application for flashcard-based learning <br />
+            - Enabled users to create, edit, and organize flashcards into decks <br />
+            `,
+        skills: ['Next.js', 'Tailwind CSS', 'Prisma', 'Shadcn-UI'],
+        date: 'September 2024',
+        icon: 'Library',
+        iconColorClass: 'text-purple-600', // Purple for Flashcards SaaS
+        two_buttons: false,
+        link: 'https://github.com/coollad49/flashcardsaas',
+    },
+    {
+        title: "E‑Commerce API Server",
+        description: "A secure, scalable backend REST API for an e‑commerce platform, implementing JWT authentication, product and order management, reviews, bookmarks, and admin-level controls.",
+        task: `
+            - Built a backend REST API for e‑commerce using Node.js and Express <br />
+            - Set up JWT‑based authentication and authorization flows <br />
+            - Implemented endpoints for managing products, orders, users <br />
+            - Deployed a production-ready server with security best practices in place
+        `,
+        skills: ['Node.js', 'Express', 'REST API', 'JWT', 'Prisma'],
+        date: 'October 2024',
+        icon: 'ShoppingCart',
+        iconColorClass: 'text-red-600', // Red for e‑commerce backend
+        two_buttons: false,
+        link: 'https://github.com/coollad49/ecommerce_api_server',
+    },
+    {
+        title: "Learn‑Your‑Facts App",
+        description: "An AI-powered facts generator tailored for students. It fetches and displays curated facts using a clean, engaging UI to spark curiosity and support learning.",
+        task: `
+            - Built a Next.js and Tailwind CSS web app for discovering daily facts<br />
+            - Integrated Pexels API to enrich each fact with relevant imagery<br />
+            - Designed UI components using shadcn‑ui for smooth user experience<br />
+            - Implemented AI‑powered fact generation via OpenRouter and Acertinity UI<br />
+        `,
+        skills: ['Next.js', 'Tailwind CSS', 'Pexels API', 'shadcn‑ui', 'OpenRouter', 'AI Integration'],
+        date: 'December 2024',
+        icon: 'Zap',
+        iconColorClass: 'text-yellow-500', // Yellow for learning/insight
+        two_buttons: false,
+        link: 'https://github.com/coollad49/learn-your-facts-app',
+    },    
+        
 ]
