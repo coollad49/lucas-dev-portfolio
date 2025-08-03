@@ -1,0 +1,25 @@
+{
+  "name": "Lucas-Adebayo Daniel - Full Stack Software Engineer",
+  "short_name": "Lucas-Adebayo Daniel",
+  "description": "Full Stack Software Engineer specializing in Django and Next.js development",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4F46E5",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/src/assets/code.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/src/assets/code.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+} 

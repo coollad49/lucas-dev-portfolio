@@ -3,7 +3,7 @@ import { faGitAlt, faPython, faJs, faReact, faHtml5, faCss3Alt, faLinux, faDocke
 
 const Skills = () => {
   return (
-    <div id='skills' className="bg-gray-900 text-white py-5 md:mt-5">
+    <section id='skills' className="bg-gray-900 text-white py-5 md:mt-5">
         <div className="flex items-center justify-center mb-6 md:mb-12 md:mt-8 lg:justify-start lg:mx-20 lg:space-x-5">
            <h1 className="font-[Manrope] font-extrabold text-2xl lg:text-4xl">Skills Acquired</h1> 
            <hr className='hidden lg:block border w-[75%]' />
@@ -83,7 +83,7 @@ const Skills = () => {
 
         </div>
         
-    </div>
+    </section>
   )
 }
 

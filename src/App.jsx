@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
 import Sidebar from "./components/Sidebar";
 import Skills from "./components/Skills";
+import SEO from "./components/SEO";
 
 const App = ()=>{
   const [darkTheme, setDarkTheme] = useState(false);
@@ -17,6 +18,7 @@ const App = ()=>{
   }, [])
   return(
     <div className={`${darkTheme? 'dark': ''}`}>
+      <SEO />
       <div className="relative bg-gray-50 dark:bg-[#18181b]">
         <Sidebar/>
         <div className="p-4 overflow-auto lg:mx-20">
@@ -36,7 +38,7 @@ const App = ()=>{
           <a href="https://github.com/coollad49" target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub</a>
           <a href="https://www.linkedin.com/in/daniellucasadebayo/" target="_blank" rel="noopener noreferrer" className="hover:underline">LinkedIn</a>
         </div>
-        <div className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Lucas Dev. All rights reserved.</div>
+        <div className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Daniellucasadebayo. All rights reserved.</div>
       </footer>
     </div>
     
