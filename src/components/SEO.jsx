@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 const SEO = ({ 
-  title = "Lucas-Adebayo Daniel - Full Stack Software Engineer | Django & Next.js Developer",
+  title = "Lucas-Adebayo Daniel | Full Stack Software Engineer",
   description = "Lucas-Adebayo Daniel is a Full Stack Software Engineer specializing in Django and Next.js development. View my portfolio with 7+ professional projects, 12+ verified skills, and experience in Python, React, TypeScript, and modern web technologies.",
   keywords = "Lucas-Adebayo Daniel, Software Engineer, Full Stack Developer, Django Developer, Next.js Developer, Python Developer, React Developer, TypeScript Developer, Web Development, Portfolio",
   image = "https://lucasbuilds.tech/src/assets/me.jpg",
